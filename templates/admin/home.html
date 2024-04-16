@@ -97,7 +97,7 @@
             <div class="row d-flex" style="padding: 20px;">
                 <div class="col-lg-4">
                     <div class="card">
-                        <strong class="text-primary" style="font-size: 25px; ">Reports Sent</strong>
+                        <strong class="text-primary" style="font-size: 25px; ">All Reports Sent</strong>
                     {% for report in reports %}
                         <a href="{{report.report}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i> View report Posted On: {{report.created}} By {{report.staff}} For {{report.student}}</a>
                     {% endfor %}
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <strong class="text-primary" style="font-size: 25px;">Assignments Sent</strong>
+                        <strong class="text-primary" style="font-size: 25px;">All Assignments Sent</strong>
                     {% for assignment in assignments %}
                         <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>View Assignment Posted On: {{assignment.created}} By {{assignment.staff}} For {{assignment.student}}</a>
                     {% endfor %}
@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card" >
-                        <strong class="text-primary" style="font-size: 25px;">Assignments Submitted</strong>
+                        <strong class="text-primary" style="font-size: 25px;">All Assignments Submitted</strong>
                     {% for assignment in assignmentsubmit %}
                         <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>  View Assignment Submitted On: {{assignment.created}} By {{assignment.student}} For {{assignment.staff}}</a>
                     {% endfor %}
