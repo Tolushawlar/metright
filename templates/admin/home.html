@@ -99,7 +99,7 @@
                     <div class="card">
                         <strong class="text-primary" style="font-size: 25px; ">Reports Sent</strong>
                     {% for report in reports %}
-                        <a href="{{report.report}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i> View report Posted: {{report.created}} By {{report.staff}} For {{report.student}}</a>
+                        <a href="{{report.report}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i> View report Posted: {{report.created}} By {{report.staff}} For {{report.student}}.</a>
                     {% endfor %}
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                     <div class="card">
                         <strong class="text-primary" style="font-size: 25px;">Assignments Sent</strong>
                     {% for assignment in assignments %}
-                        <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>View Assignment Posted: {{assignment.created}} By {{assignment.staff}} For {{assignment.student}}</a>
+                        <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>View Assignment Posted: {{assignment.created}} By {{assignment.staff}} For {{assignment.student}}.</a>
                     {% endfor %}
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                     <div class="card" >
                         <strong class="text-primary" style="font-size: 25px;">Assignments Submitted</strong>
                     {% for assignment in assignmentsubmit %}
-                        <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>  View Assignment Submitted: {{assignment.created}} By {{assignment.student}} For {{assignment.staff}}</a>
+                        <a href="{{assignment.assignment}}" target="_blank" style="padding:5px"> <i class="icon-rss-feed"></i>  View Assignment Submitted: {{assignment.created}} By {{assignment.student}} For {{assignment.staff}}.</a>
                     {% endfor %}
                     </div>
                 </div>
